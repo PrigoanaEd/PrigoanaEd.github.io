@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin:0;
+  padding:0;
+}
+
+.parentDiv {
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.nav {
+  text-align: center;
+}
+
+ul li{
+  display: inline-block;
+  padding: 0 5px;
+}
+</style>
+</head>
+<body>
+<div class="parentDiv">
+  <div class="nav">
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Pages</li>
+    </ul>
+  </div>
+</div>
+<br>
+<br>
+<div class="nav">
+<h1><u>The Golden Temple</u></h1>
+</div>
+<p>The Golden Temple is a building covered in gold located in India. In this Blog Post, I will share some facts about it, key features, and justify why Sikhs go there on pilgirmage!</p>
+<div class="nav">
+<h2><u>Facts</u></h2>
+</div>
+<p>> The Golden Temple is on an island.
+<br>> The Golden Temple is open to all worshippers.
+<br>> The Golden Temple is a gurdwara.
+<br>> The Golden Temple dates back to the 1500's.
+<br>> The Golden Temple houses the Guru Granth Sahib.
+</p>
+<div class="nav">
+<h2><u>Key Features</u></h2>
+</div>
+<p>> The Golden Temple is famous for its big, golden dome.
+<br>> The Golden Temple's architecture resembles that of buildings found in the Indian Subcontinent.
+<br>> Guru Arjan rather decided to build the shrine lower than the surroundings so that devotees would have to walk downwards to reach it.
+<br>> The floral designs on the marble panels of the walls around the sanctum are Arabesque.
+<br>> The arches include verses from the Sikh scripture in gold letters.
+</p>
+<div class="nav">
+<h2><u>Why do Sikhs go to The Golden Temple on Pilgrimage?</u></h2>
+</div>
+<p>> The Golden Temple is famous for its big, golden dome.
+<br>> The Golden Temple's architecture resembles that of buildings found in the Indian Subcontinent.
+<br>> Guru Arjan rather decided to build the shrine lower than the surroundings so that devotees would have to walk downwards to reach it.
+<br>> The floral designs on the marble panels of the walls around the sanctum are Arabesque.
+<br>> The arches include verses from the Sikh scripture in gold letters.
+</p>
+</body>
+</html>
