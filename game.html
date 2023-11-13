@@ -128,7 +128,10 @@ function everyinterval(n) {
 function accelerate(n) {
     myGamePiece.gravity = n;
 }
+document.getElementById("demo").innerHTML = myScore == "12";
 </script>
+<p id="demo"></p>
+
 <br>
 <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">UP</button>
 <a href="javascript:location.reload(true)"><button>Restart game</button></a>
