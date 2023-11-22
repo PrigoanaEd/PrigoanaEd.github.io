@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Discord Start */
+#imgHolder {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+}
+ #imgHolder::before {
+  border-radius: 40px;
+    content:"";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-image:url("./Images/discord.png");
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    z-index:10;
+}
+#imgHolder:hover::before {
+    opacity:0;
+}
+#imgHolder::after {
+ border-radius: 40px;
+    content:"";
+    background: url("./Images/discord1.png");
+    /*opacity: 0.5;*/
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+/* Discord End */
+/* Gbatempt Start */
+#imgHolderGbatempt {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+}
+ #imgHolderGbatempt::before {
+  border-radius: 40px;
+    content:"";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-image:url("./Images/gbatempt.png");
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    z-index:10;
+}
+#imgHolderGbatempt:hover::before {
+    opacity:0;
+}
+#imgHolderGbatempt::after {
+ border-radius: 40px;
+    content:"";
+    background: url("./Images/gbatempt1.png");
+    /*opacity: 0.5;*/
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+/* Gbatempt End */
+/* Github Start */
+#imgHolderGithub {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+}
+ #imgHolderGithub::before {
+  border-radius: 40px;
+    content:"";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-image:url("./Images/github.png");
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    z-index:10;
+}
+#imgHolderGithub:hover::before {
+    opacity:0;
+}
+#imgHolderGithub::after {
+ border-radius: 40px;
+    content:"";
+    background: url("./Images/github2.png");
+    /*opacity: 0.5;*/
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+/* Github End */
+/* Snapchat Start */
+#imgHolderSnapchat {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+}
+ #imgHolderSnapchat::before {
+  border-radius: 40px;
+    content:"";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-image:url("./Images/snapchat.png");
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    z-index:10;
+}
+#imgHolderSnapchat:hover::before {
+    opacity:0;
+}
+#imgHolderSnapchat::after {
+ border-radius: 40px;
+    content:"";
+    background: url("./Images/snapchat1.png");
+    /*opacity: 0.5;*/
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+/* Snapchat End */
+/* Steam Start */
+#imgHolderSteam {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+}
+ #imgHolderSteam::before {
+  border-radius: 40px;
+    content:"";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-image:url("./Images/steam.png");
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    z-index:10;
+}
+#imgHolderSteam:hover::before {
+    opacity:0;
+}
+#imgHolderSteam::after {
+ border-radius: 40px;
+    content:"";
+    background: url("./Images/steam1.png");
+    /*opacity: 0.5;*/
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+/* Steam End */
+/* Twitter Start */
+#imgHolderTwitter {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+}
+ #imgHolderTwitter::before {
+  border-radius: 40px;
+    content:"";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-image:url("./Images/twitter.png");
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    z-index:10;
+}
+#imgHolderTwitter:hover::before {
+    opacity:0;
+}
+#imgHolderTwitter::after {
+ border-radius: 40px;
+    content:"";
+    background: url("./Images/twitter1.png");
+    /*opacity: 0.5;*/
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+/* Twitter End */
+/* Youtube Start */
+#imgHolderYoutube {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+}
+ #imgHolderYoutube::before {
+  border-radius: 40px;
+    content:"";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-image:url("./Images/youtube.png");
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    z-index:10;
+}
+#imgHolderYoutube:hover::before {
+    opacity:0;
+}
+#imgHolderYoutube::after {
+ border-radius: 40px;
+    content:"";
+    background: url("./Images/youtube1.png");
+    /*opacity: 0.5;*/
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+/* Youtube End */
+/* Tumblr Start */
+#imgHolderTumblr {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+}
+ #imgHolderTumblr::before {
+  border-radius: 40px;
+    content:"";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-image:url("./Images/tumblr.png");
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    z-index:10;
+}
+#imgHolderTumblr:hover::before {
+    opacity:0;
+}
+#imgHolderTumblr::after {
+ border-radius: 40px;
+    content:"";
+    background: url("./Images/tumblr1.png");
+    /*opacity: 0.5;*/
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+/* Tumblr End */
+img {
+  border-radius: 40px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+ }
+body {
+background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				padding:0;margin:0;text-align:center;
+					background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;">
+  }
+ table, th, td {
+  border-collapse: collapse;
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+th, td {
+  padding: 15px;
+}
+body, h1, h2, h3, h4, h5, h6  {
+  margin: auto;
+  font-family: sans-serif;
+  font-size: 52.5px;
+}
+</style>
+</head>
+<body>
+<center>
+<h1>These Are My Socials</h1>
+</center>
+<table class="center">
+<tbody>
+<tr>
+<td><a href="https://discordapp.com/users/453544587949113344"><div id="imgHolder"></div></a></td>
+<td><a href="https://github.com/Yetiuard"><div id="imgHolderGithub"></div></a></td>
+</tr>
+<tr>
+<td><a href="https://gbatemp.net/members/eduardprigoana.644593/"><div id="imgHolderGbatempt"></div></a></td>
+<td><a href="https://www.snapchat.com/add/rotten-morshu"><div id="imgHolderSnapchat"></div></a></td>
+</tr>
+<tr>
+<td><a href="https://steamcommunity.com/id/vsded/"><div id="imgHolderSteam"></div></a></td>
+<td><a href="https://twitter.com/yetiuard"><div id="imgHolderTwitter"></div></a></td>
+</tr>
+<tr>
+<td><a href="https://www.youtube.com/@eduardprigoana402"><div id="imgHolderYoutube"></div></a></td>
+<td><a href="https://www.tumblr.com/yetiuard"><div id="imgHolderTumblr"></div></a></td>
+</tr>
+</tbody>
+</table>
+</center>
+</body>
+</html>
