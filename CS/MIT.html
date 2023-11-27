@@ -1,10 +1,59 @@
-<!DOCTYPE HTML>
-<htmL>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Main Game Page</title>
+    <style>
+      body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.center {
+  border: 0px solid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0x;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wishlist</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <p>Whoops! looks like you need to pay to acces. You didn't say I couldn't lock my app behind a paywall mister Faulkner >:)!!</p>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post"> <!-- Identify your business so that you can collect the payments. --> <input type="hidden" name="business" value="yetiuard@gmail.com"> <!-- Specify a Buy Now button. --> <input type="hidden" name="cmd" value="_xclick"> <!-- Specify details about the item that buyers will purchase. --> <input type="hidden" name="item_name" value="Enter The Game"> <input type="hidden" name="amount" value="0.01"> <input type="hidden" name="currency_code" value="USD"> <!-- Display the payment button. --> <input type="image" name="submit" border="0" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" alt="Buy Now"> <img alt="" border="0" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" > </form>
+   <div class="d-flex flex-column justify-content-center w-100 h-100">
+
+</div>
+
+				<div class="center">
+				<center>
+					<h1 style="padding:0;margin:0;font-weight:normal;font-size:3em;color:#fff;font-family:couture; "><u><strong>HET THERE!</strong></u><br>never said I <i>COULDN'T</i> lock my game behind a paywall!</h1><br><form action="https://www.paypal.com/cgi-bin/webscr" method="post"> <!-- Identify your business so that you can collect the payments. --> <input type="hidden" name="business" value="yetiuard@gmail.com"> <!-- Specify a Buy Now button. --> <input type="hidden" name="cmd" value="_xclick"> <!-- Specify details about the item that buyers will purchase. --> <input type="hidden" name="item_name" value="Enter The Game"> <input type="hidden" name="amount" value="0.01"> <input type="hidden" name="currency_code" value="USD"> <!-- Display the payment button. --> <input type="image" name="submit" border="0" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" alt="Buy Now"> <img alt="" border="0" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" > </form>
+				</div>
+				<div style="padding: 0;   background-attachment: fixed;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					margin: 0;">
+					</div>
+			</div>
+	</div>
+</div>
+</div>
   </body>
-</htmL>
+</html>
