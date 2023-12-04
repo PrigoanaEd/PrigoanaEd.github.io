@@ -35,22 +35,6 @@ a {
     text-decoration: none;
 }
 
-
-/* General animations */
-
-.hoverable {
-    opacity: .84;
-    -moz-transition: 140ms opacity;
-    -o-transition: 140ms opacity;
-    -webkit-transition: 140ms opacity;
-    transition: 140ms opacity;
-}
-
-    .hoverable:hover {
-        opacity: 1;
-    }
-
-
 /* Header */
 
 #header-right {

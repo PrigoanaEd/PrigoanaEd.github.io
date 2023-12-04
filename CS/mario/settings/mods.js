@@ -2,11 +2,11 @@ PlayMarioJas.PlayMarioJas.settings.mods = {
     "storeLocally": true,
     "mods": [
         {
-            "name": "Bouncy Bounce",
+            "name": "Bouncy Ground",
             "description": "Mario landing causes him to jump.",
             "author": {
-                "name": "Jaswinder Singh",
-                "email": "hello@playmario.org"
+                "name": "Eduard",
+                "email": "yetiuard@gmail.com"
             },
             "enabled": false,
             "events": {
@@ -34,11 +34,11 @@ PlayMarioJas.PlayMarioJas.settings.mods = {
                 }
             },
         }, {
-            "name": "Dark is the Night",
-            "description": "The night is darkest before the dawn, but I promise you: the dawn is coming.",
+            "name": "Night Mode",
+            "description": "Changes to Night Background",
             "author": {
-                "name": "Jaswinder Singh",
-                "email": "hello@playmario.org"
+                "name": "Eduard Prigoana",
+                "email": "yetiuard@gmail.com"
             },
             "enabled": false,
             "events": {
@@ -81,11 +81,11 @@ PlayMarioJas.PlayMarioJas.settings.mods = {
                 }
             }
         }, {
-            "name": "Earthquake!",
+            "name": "Earthquake",
             "description": "Mario landing causes everything else to jump.",
             "author": {
-                "name": "Jaswinder Singh",
-                "email": "hello@playmario.org"
+                "name": "Eduard Prigoana",
+                "email": "yetiuard@gmail.com"
             },
             "enabled": false,
             "events": {
@@ -158,10 +158,10 @@ PlayMarioJas.PlayMarioJas.settings.mods = {
             }
         }, {
             "name": "Gradient Skies",
-            "description": "Skies fade out to black in the heavens above.",
+            "description": "Self Explanatory.",
             "author": {
-                "name": "Jaswinder Singh",
-                "email": "hello@playmario.org"
+                "name": "Eduard Prigoana",
+                "email": "yetiuard@gmail.com"
             },
             "enabled": false,
             "events": {
@@ -247,8 +247,8 @@ PlayMarioJas.PlayMarioJas.settings.mods = {
             "name": "Hard Mode",
             "description": "Like in Super Mario Bros Deluxe!",
             "author": {
-                "name": "Jaswinder Singh",
-                "email": "hello@playmario.org"
+                "name": "Eduard Prigoana",
+                "email": "yetiuard@gmail.com"
             },
             "enabled": false,
             "events": {
@@ -340,8 +340,8 @@ PlayMarioJas.PlayMarioJas.settings.mods = {
             "name": "High Speed",
             "description": "Mario's maximum speed is quadrupled.",
             "author": {
-                "name": "Jaswinder Singh",
-                "email": "hello@playmario.org"
+                "name": "Eduard Prigoana",
+                "email": "yetiuard@gmail.com"
             },
             "enabled": false,
             "events": {
@@ -372,10 +372,10 @@ PlayMarioJas.PlayMarioJas.settings.mods = {
             }
         }, {
             "name": "Infinite Lives",
-            "description": "Mario never really dies.",
+            "description": "Mario always comes back.",
             "author": {
-                "name": "Jaswinder Singh",
-                "email": "hello@playmario.org"
+                "name": "Eduard Prigoana",
+                "email": "yetiuard@gmail.com"
             },
             "enabled": false,
             "events": {
@@ -412,8 +412,8 @@ PlayMarioJas.PlayMarioJas.settings.mods = {
             "name": "Invincibility",
             "description": "Mario is constantly given star power.",
             "author": {
-                "name": "Jaswinder Singh",
-                "email": "hello@playmario.org"
+                "name": "Eduard Prigoana",
+                "email": "yetiuard@gmail.com"
             },
             "enabled": false,
             "events": {
@@ -442,8 +442,8 @@ PlayMarioJas.PlayMarioJas.settings.mods = {
             "name": "Parallax Clouds",
             "description": "Clouds in the sky scroll at about 63% the normal rate.",
             "author": {
-                "name": "Jaswinder Singh",
-                "email": "hello@playmario.org"
+                "name": "Eduard Prigoana",
+                "email": "yetiuard@gmail.com"
             },
             "enabled": false,
             "events": {
@@ -456,10 +456,10 @@ PlayMarioJas.PlayMarioJas.settings.mods = {
             }
         }, {
             "name": "Low Gravity",
-            "description": "I believe I can fly!",
+            "description": "Decreases Gravity",
             "author": {
-                "name": "Jaswinder Singh",
-                "email": "hello@playmario.org"
+                "name": "Eduard Prigoana",
+                "email": "yetiuard@gmail.com"
             },
             "enabled": false,
             "events": {
@@ -476,8 +476,8 @@ PlayMarioJas.PlayMarioJas.settings.mods = {
             "name": "Luigi",
             "description": "The little brother who could!",
             "author": {
-                "name": "Jaswinder Singh",
-                "email": "hello@playmario.org"
+                "name": "Eduard Prigoana",
+                "email": "yetiuard@gmail.com"
             },
             "enabled": false,
             "events": {
@@ -506,8 +506,8 @@ PlayMarioJas.PlayMarioJas.settings.mods = {
             "name": "Tilt Gravity",
             "description": "Tilting your device pushes characters around",
             "author": {
-                "name": "Jaswinder Singh",
-                "email": "hello@playmario.org"
+                "name": "Eduard Prigoana",
+                "email": "yetiuard@gmail.com"
             },
             "enabled": false,
             "events": {
@@ -549,8 +549,8 @@ PlayMarioJas.PlayMarioJas.settings.mods = {
             "name": "Palette Swap",
             "description": "Swaps the color palette around randomly for each area.",
             "author": {
-                "name": "Jaswinder Singh",
-                "email": "hello@playmario.org"
+                "name": "Eduard Prigoana",
+                "email": "yetiuard@gmail.com"
             },
             "enabled": false,
             "events": {
@@ -615,8 +615,8 @@ PlayMarioJas.PlayMarioJas.settings.mods = {
             "name": "QCount",
             "description": "QQQQQQQ",
             "author": {
-                "name": "Jaswinder Singh",
-                "email": "hello@playmario.org"
+                "name": "Eduard Prigoana",
+                "email": "yetiuard@gmail.com"
             },
             "enabled": false,
             "events": {
@@ -688,8 +688,8 @@ PlayMarioJas.PlayMarioJas.settings.mods = {
             "name": "Super Fireballs",
             "description": "Fireballs blow up solids, and Mario has unlimited.",
             "author": {
-                "name": "Jaswinder Singh",
-                "email": "hello@playmario.org"
+                "name": "Eduard Prigoana",
+                "email": "yetiuard@gmail.com"
             },
             "enabled": false,
             "events": {
@@ -703,11 +703,11 @@ PlayMarioJas.PlayMarioJas.settings.mods = {
                 }
             }
         }, {
-            "name": "Trip of Acid",
+            "name": "Glitch UI",
             "description": "Sprites aren't cleared from the screen each game tick.",
             "author": {
-                "name": "Jaswinder Singh",
-                "email": "hello@playmario.org"
+                "name": "Eduard Prigoana",
+                "email": "yetiuard@gmail.com"
             },
             "enabled": false,
             "events": {
