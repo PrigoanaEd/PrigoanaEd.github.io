@@ -102,14 +102,6 @@ section#game {
         min-width: 20%;
     }
 
-    #controls .control:hover {
-        margin-top: -322px;
-        height: 350px; /* 322px + 28px */
-        border-color: #99ffcc;
-        background: #009966;
-        z-index: 70;
-    }
-
     #controls .control h4 {
         position: absolute;
         right: 0;
@@ -126,12 +118,6 @@ section#game {
         -o-transition: 35ms opacity;
         -webkit-transition: 35ms opacity;
         transition: 35ms opacity;
-    }
-
-    #controls .control:hover .control-inner {
-        display: block;
-        margin-top: 0;
-        opacity: 1;
     }
 
     #controls .select-options {
