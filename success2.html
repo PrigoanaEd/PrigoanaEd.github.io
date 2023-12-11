@@ -1,8 +1,41 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Thank you for your purchase!</title>
+<title>Hey there :)</title>
+<style>
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+font-family: Arial, sans-serif;
+}
+.message-container {
+text-align: center;
+}
+</style>
+<script>
+// Function to display the message and redirect to the specified YouTube link
+function redirectToYouTube() {
+var messageContainer = document.getElementById("message-container");
+messageContainer.innerHTML = "<h2>Hey there</h2>";
+setTimeout(function () {
+// Display the additional message for 1 second longer (4000 milliseconds)
+messageContainer.innerHTML = "<h2>You'll be redirected to the game in a few moments</h2>";
+setTimeout(function () {
+window.location.href = "https://www.youtube.com/watch?v=BbeeuzU5Qc8";
+}, 300);
+}, 4000); // Changed the duration to 4000 milliseconds
+}
+</script>
 </head>
 <body>
-<p>Thank you for your purchase! the payment has been made and the transaction completed. payment transaction details will be emailed to you shortly.<br> <a href="https://prigoanaed.github.io/CS/mario">Click HERE to acces the game.</a></p></body>
+<div class="message-container" id="message-container">
+<h1>Redirecting to vbucks</h1>
+</div>
+<script>
+redirectToYouTube(); // Automatically start the redirection process
+</script>
+</body>
 </html>
