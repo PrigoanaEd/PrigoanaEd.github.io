@@ -1,0 +1,186 @@
+<!Doctype HTML>
+<html>
+<head>
+<title>Eduard's Spotify: Windows</title>
+<link rel="icon" type="image/png" href="./favicon.png">
+<style>
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+body {
+font-family: "Gill Sans", sans-serif;
+background: rgb(255,176,176);
+background: -moz-linear-gradient(55deg, rgba(255,176,176,1) 0%, rgba(255,186,186,1) 100%);
+background: -webkit-linear-gradient(55deg, rgba(255,176,176,1) 0%, rgba(255,186,186,1) 100%);
+background: linear-gradient(55deg, rgba(255,176,176,1) 0%, rgba(255,186,186,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffb0b0",endColorstr="#ffbaba",GradientType=1);
+}
+h1 {
+		  text-align: center;
+	  }
+	  .cards {
+	    margin: 23%;
+  position: absolute;
+  top: 10%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+		  display: flex;
+		  max-width: 1280px;
+  width: 50%;
+  padding: 10px;
+	  }
+
+	  .card {
+		  border: 1px solid #777;
+		  border-radius: 10px;
+		  width: calc(40% - 1px);
+		  padding: 30px;
+		  position: relative;
+		  display: flex;
+		  flex-direction: column;
+		  margin: 20px;
+		  overflow: hidden;
+		  background: rgb(246,123,246);
+background: -moz-linear-gradient(21deg, rgba(246,123,246,1) 0%, rgba(130,133,245,1) 48%, rgba(0,255,190,1) 100%);
+background: -webkit-linear-gradient(21deg, rgba(246,123,246,1) 0%, rgba(130,133,245,1) 48%, rgba(0,255,190,1) 100%);
+background: linear-gradient(21deg, rgba(246,123,246,1) 0%, rgba(130,133,245,1) 48%, rgba(0,255,190,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f67bf6",endColorstr="#00ffbe",GradientType=1);
+	  }
+
+	  .card__link {
+		  position: absolute;
+		  top: 0;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  display: block;
+	  }
+
+	  .card__footer {
+		  margin-top: auto;
+	  }
+
+	  .card__inner {
+		  position: relative;
+		  z-index: 2;
+		  pointer-events: none;
+		  display: flex;
+		  flex-direction: column;
+		  height: 100%;
+	  }
+
+	  .card__inner a {
+		  pointer-events: auto;
+	  }
+
+	  .card__read-more {
+		  display: block;
+		  width: 100%;
+		  padding: 8px;
+		  border-radius: 10px;
+		  text-align: center;
+		  background: #333;
+		  color: #fff;
+		  box-shadow: 3px 3px 5px #777;
+		  border: 1px solid #777;
+		  margin: 10px 0;
+		  box-sizing: border-box;
+		  text-transform: uppercase;
+		  font-weight: 700;
+		  transition: all 500ms;
+	  }
+
+	  .card__link:hover + div .card__read-more,
+	  .card__link:focus + div .card__read-more {
+		  box-shadow: inset 2px 2px 3px #777;
+		  background: #eee;
+		  color: #333;
+	  }
+
+	  .card__z-index .card__link {
+		  z-index: 3;
+	  }
+
+	  .card__z-index .card__inner {
+		  pointer-events: auto;
+	  }
+
+	  .card__z-index .card__inner a {
+		  z-index: 4;}
+
+		h1{
+	    margin: 27%;
+  position: absolute;
+  top: -37%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+		  display: flex;
+		  max-width: 1280px;
+  width: 60%;
+  padding: 10px;
+	  }</style></head>
+<body>
+<h1>What method do you want to use?</h1>
+  <div class="cards">
+	  <div class="card">
+		  <a class="card__link" href="./paid.html"></a>
+		  <div class="card__inner">
+			  <div class="card__header">
+				  <h2 id="card-title-1">Paid</h2>
+			  </div>
+			  <div class="card__body">
+				  <p>This is the easiest method, but you have to pay monthly for it.</p>
+			  </div>
+			  <div class="card__footer">
+				  <span class="card__read-more">Choose</span>
+			  </div>
+		  </div>
+	  </div>
+	  <div class="card">
+		  <a class="card__link" href="./spotx.html" aria-labelledby="card-title-1"></a>
+		  <div class="card__inner">
+			  <div class="card__header">
+				  <h2 id="card-title-1">SpotX</h2>
+			  </div>
+			  <div class="card__body">
+				  <p>Uses a modified client with extra features. (reccomended)</p>
+			  </div>
+			  <div class="card__footer">
+				  <span class="card__read-more">Choose</span>
+			  </div>
+		  </div>
+	  </div>
+	  <div class="card">
+		  <a class="card__link" href="./burntsushi.html" aria-labelledby="card-title-1"></a>
+		  <div class="card__inner">
+			  <div class="card__header">
+				  <h2 id="card-title-1">Burnt Sushi</h2>
+			  </div>
+			  <div class="card__body">
+				  <p>Uses DLL injection to remove ads.</p>
+			  </div>
+			  <div class="card__footer">
+				  <span class="card__read-more">Choose</span>
+			  </div>
+		  </div>
+	  </div>
+		  </div>
+</body>
+</html>
