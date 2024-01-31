@@ -616,7 +616,7 @@ let game = {
         let format = game.utilities.formatNumber;
         let player = game.player;
         let stats = player.cookieStats;
-        document.title = 'Cookie Clicker | ' + format(player.cookies);
+        document.title = 'Eddy Clicker | ' + format(player.cookies);
         updateText('cookieDisplay', format(player.cookies));
         updateText('cpcDisplay', format(player.aMPC));
         updateText('cpsDisplay', format(player.aMPF * game.settings.frameRate));
