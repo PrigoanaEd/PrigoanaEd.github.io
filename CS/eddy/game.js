@@ -131,7 +131,7 @@ class Building {
         if (this.specialCPS > 0) {
             singleEffect += (this.specialCPS / this.amount);
         }
-        let html = `<b>${this.name}</b></br>You have <b>${this.amount}</b> ${this.name.toLowerCase()}(s).</br>Each ${this.name.toLowerCase()} produces <b>${format(singleEffect)}</b> cookie(s).</br>All of your ${this.name.toLowerCase()}(s) combined produces <b>${format(this.effect)}</b> cookie(s).</br>${this.generateBuyButtons()}</br>${this.generateUpgradeButtons()}`;
+        let html = `<b>${this.name}</b></br>You have <b>${this.amount}</b> ${this.name.toLowerCase()}(s).</br>Each ${this.name.toLowerCase()} produces <b>${format(singleEffect)}</b> Eddies.</br>All of your ${this.name.toLowerCase()}(s) combined produces <b>${format(this.effect)}</b> eddies..</br>${this.generateBuyButtons()}</br>${this.generateUpgradeButtons()}`;
         return html;
     }
 }
@@ -196,11 +196,11 @@ let game = {
             new Upgrade('Reinforced Index Finger', 100, 'Cursors and clicking are twice as efficient', 1),
             new Upgrade('Carpal tunnel prevention cream', 500, 'Cursors and clicking are twice as efficient', 1),
             new Upgrade('Ambidextrous', 10000, 'Cursors and clicking are twice as efficient', 10),
-            new Upgrade('Thousand Fingers', 100000, 'Mouse and cursors gain +0.1 cookies for every non-cursor building owned', 25, 0.1),
-            new Upgrade('Million Fingers', 10000000, 'Mouse and cursors gain +0.5 cookies for every non-cursor building owned', 50, 0.5),
-            new Upgrade('Billion Fingers', 100000000, 'Mouse and cursors gain +5 cookies for every non-cursor building owned', 100, 5),
+            new Upgrade('Thousand Fingers', 100000, 'Mouse and cursors gain +0.1 eddies for every non-cursor building owned', 25, 0.1),
+            new Upgrade('Million Fingers', 10000000, 'Mouse and cursors gain +0.5 eddies for every non-cursor building owned', 50, 0.5),
+            new Upgrade('Billion Fingers', 100000000, 'Mouse and cursors gain +5 eddies for every non-cursor building owned', 100, 5),
             new Upgrade('Trillion Fingers', 1000000000, 'Mouse and cursors gain +50 for every non-cursor building owned', 150, 50),
-            new Upgrade('Quadrillion Fingers', 10000000000, 'Mouse and cursors gain +500 cookies for each non-cursor building owned', 200, 500),
+            new Upgrade('Quadrillion Fingers', 10000000000, 'Mouse and cursors gain +500 eddies for each non-cursor building owned', 200, 500),
             new Upgrade('Quintillion Fingers', 10000000000000, 'Mouse and cursors gain +5.000K for every non-cursor building owned', 250, 5000),
             new Upgrade('Sextillion Fingers', 10000000000000000, ' Mouse and cursors gain +50.000K for every non-cursor building owned', 300, 50000),
             new Upgrade('Septillion Fingers', 10000000000000000000, 'Mouse and cursors gain +500.000K for every non-cursor building owned', 350, 500000),
@@ -291,7 +291,7 @@ let game = {
             new Upgrade('Kitchen curses', 16500000000000, 'Wizard towers are twice as efficient', 50),
             new Upgrade('School of sorcery', 1650000000000000, 'Wizard towers are twice as efficient', 100),
             new Upgrade('Dark formulas', 165000000000000000, 'Wizard towers are twice as efficient', 150),
-            new Upgrade('Cookiemancy', 165000000000000000000, 'Wizard towers are twice as efficient', 200),
+            new Upgrade('Eddiemancy', 165000000000000000000, 'Wizard towers are twice as efficient', 200),
             new Upgrade('Rabbit trick', 165000000000000000000000, 'Wizard towers are twice as efficient', 250),
             new Upgrade('Deluxe tailored wands', 165000000000000000000000000, 'Wizard towers are twice as efficient', 300),
             new Upgrade('Immobile spellcasting', 165000000000000000000000000000, 'Wizard towers are twice as efficient', 350),
@@ -344,7 +344,7 @@ let game = {
             new Upgrade('Yestermorrow comparators', 70000000000000000000, 'Time machines are twice as efficient', 100),
             new Upgrade('Far future enactment', 7000000000000000000000, 'Time machines are twice as efficient', 150),
             new Upgrade('Great loop hypothesis', 7000000000000000000000000, 'Time machines are twice as efficient', 200),
-            new Upgrade('Cookietopian moments of maybe', 7000000000000000000000000000, 'Time machines are twice as efficient', 250),
+            new Upgrade('Eddietopian moments of maybe', 7000000000000000000000000000, 'Time machines are twice as efficient', 250),
             new Upgrade('Second seconds', 7000000000000000000000000000000, 'Time machines are twice as efficient', 300),
             new Upgrade('Additional clock hands', 7000000000000000000000000000000000, 'Time machines are twice as efficient', 350),
             new Upgrade('Nostalgia', 70000000000000000000000000000000000000, 'Time machines are twice as efficient', 400)
@@ -376,7 +376,7 @@ let game = {
             new Upgrade('Light capture measures', 10500000000000000000000000000000000000000, 'Prisms are twice as efficient', 400)
         ]),
         new Building('Chancemaker', 26000000000000000, 21000000000, [
-            new Upgrade('Your lucky cookie', 260000000000000000, 'Chancemakers are twice as efficient', 1),
+            new Upgrade('Your lucky Eddie', 260000000000000000, 'Chancemakers are twice as efficient', 1),
             new Upgrade('\'All Bets Are Off\' magic coin', 130000000000000000, 'Chancemakers are twice as efficient', 5),
             new Upgrade('Winning lottery ticket', 13000000000000000000, 'Chancemakers are twice as efficient', 25),
             new Upgrade('Four-leaf clover field', 130000000000000000000, 'Chancemakers are twice as efficient', 50),
@@ -409,7 +409,7 @@ let game = {
             new Upgrade('Syntactic sugar', 355000000000000000000000000, 'Java consoles are twice as efficient', 100),
             new Upgrade('A nice cup of coffee', 35500000000000000000000000000, 'Java consoles are twice as efficient', 150),
             new Upgrade('Just-in-time baking', 35500000000000000000000000000000, 'Java consoles are twice as efficient', 200),
-            new Upgrade('cookies++', 35500000000000000000000000000000000, 'Java consoles are twice as efficient', 250),
+            new Upgrade('Eddies++', 35500000000000000000000000000000000, 'Java consoles are twice as efficient', 250),
             new Upgrade('Software updates', 35500000000000000000000000000000000000, 'Java consoles are twice as efficient', 300),
             new Upgrade('Game.Loop', 35500000000000000000000000000000000000000, 'Java consoles are twice as efficient', 350),
             new Upgrade('eval()', 355000000000000000000000000000000000000000000, 'Java consoles are twice as efficient', 400)
