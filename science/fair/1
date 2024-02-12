@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal-inspired Index Page</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #2E3440;
+            color: #D8DEE9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .heading {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .links {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .links li {
+            margin-bottom: 5px;
+        }
+        .links a {
+            color: #81A1C1;
+            text-decoration: none;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+		  body{
+		  text-align: center;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">Computer Science</div>
+        <ul class="links">
+            <li><a href="https://prigoana.lol/CS/eddy">Eddy</a></li>
+            <li><a href="https://prigoana.lol/CS/random">Random</a></li>
+            <li><a href="https://prigoana.lol/CS/game">Game</a></li>
+        </ul>
+        <div class="heading">Science</div>
+        <ul class="links">
+            <li><a href="https://prigoana.lol/science/insulation">Insulation</a></li>
+            <li><a href="https://prigoana.lol/science/metals">Metals</a></li>
+            <li><a href="https://prigoana.lol/science/ph">pH chart</a></li>
+        </ul>
+    </div>
+</body>
+</html>
