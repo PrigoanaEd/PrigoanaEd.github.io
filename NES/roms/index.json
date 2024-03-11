@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Super Mario Bros.",
+        "file": "smb.nes"
+    },
+    {
+        "name": "Mega Man 2",
+        "file": "mm2.nes"
+    },
+    {
+        "name": "The Legend of Zelda",
+        "file": "tloz.nes"
+    },
+    {
+        "name": "Lawn Mower",
+        "file": "lawn_mower.nes"
+    },
+    {
+        "name": "Final Fantasy",
+        "file": "ff.nes"
+    },
+    {
+        "name": "Mad Wizard",
+        "file": "mad_wizard.nes"
+    },
+    {
+        "name": "Super Painter",
+        "file": "super_painter_1_0.nes"
+    },
+    {
+        "name": "Contra",
+        "file": "contra.nes"
+    },
+    {
+        "name": "Castlevania",
+        "file": "csvania.nes"
+    },
+    {
+        "name": "Troll Burner",
+        "file": "trollburner_demo.nes"
+    },
+    {
+        "name": "Tetris",
+        "file": "Tetris.nes"
+    },
+    {
+        "name": "Wild Gunman",
+        "file": "WildGunman.nes"
+    },
+    {
+        "name": "Tecmo Bowl",
+        "file": "TecmoBowl.nes"
+    },
+    {
+        "name": "Pirates!",
+        "file": "Pirates.nes"
+    },
+    {
+        "name": "Ice Hockey",
+        "file": "IceHockey.nes"
+    },
+    {
+        "name": "Bomberman",
+        "file": "Bomberman.nes"
+    },
+    {
+        "name": "Super Mario Bros. 3",
+        "file": "mariobros3.nes"
+    },
+    {
+        "name": "Super Mario Bros. 2",
+        "file": "mariobros2.nes"
+    }
+]
