@@ -4,44 +4,20 @@
         "file": "lawn_mower.nes"
     },
     {
-        "name": "Adventure Island II",
-        "file": "Adventure_Island_II_(USA).nes"
-    },
-    {
         "name": "Adventures of Lolo",
         "file": "Adventures_of_Lolo_(USA).nes"
-    },
-    {
-        "name": "Aladdin",
-        "file": "Aladdin_(Unl).nes"
-    },
-    {
-        "name": "Bad Dudes",
-        "file": "Bad_Dudes_(USA).nes"
     },
     {
         "name": "Balloon Fight",
         "file": "Balloon_Fight_(USA).nes"
     },
     {
-        "name": "Batman - The Video Game",
-        "file": "Batman_-_The_Video_Game_(USA).nes"
-    },
-    {
         "name": "Battle City",
         "file": "BattleCity_(Japan).nes"
     },
     {
-        "name": "Battle of Olympus, The",
+        "name": "The Battle of Olympus",
         "file": "Battle_of_Olympus,_The_(USA).nes"
-    },
-    {
-        "name": "Battletoads",
-        "file": "Battletoads_(Japan).nes"
-    },
-    {
-        "name": "Battletoads-Double Dragon",
-        "file": "Battletoads-Double_Dragon_(USA).nes"
     },
     {
         "name": "Binary Land",
@@ -60,28 +36,8 @@
         "file": "Bubble_Bobble_(USA).nes"
     },
     {
-        "name": "Bucky O'Hare",
-        "file": "Bucky_O'Hare_(USA).nes"
-    },
-    {
         "name": "BurgerTime",
         "file": "BurgerTime_(USA).nes"
-    },
-    {
-        "name": "Cabal",
-        "file": "Cabal_(USA).nes"
-    },
-    {
-        "name": "Captain Skyhawk",
-        "file": "Captain_Skyhawk_(USA)_(Rev_1).nes"
-    },
-    {
-        "name": "Captain Tsubasa II - Super Striker",
-        "file": "Captain_Tsubasa_II_-_Super_Striker_(Japan).nes"
-    },
-    {
-        "name": "Celeste Mario's Zap & Dash!",
-        "file": "Celeste_Mario's_Zap_&_Dash!_(Unl).nes"
     },
     {
         "name": "Chip 'n Dale - Rescue Rangers",
@@ -100,36 +56,12 @@
         "file": "Clash_at_Demonhead_(USA).nes"
     },
     {
-        "name": "Cobra Triangle",
-        "file": "Cobra_Triangle_(USA).nes"
-    },
-    {
         "name": "Commando",
         "file": "Commando_(USA).nes"
     },
     {
-        "name": "Contra",
-        "file": "Contra_(Japan).nes"
-    },
-    {
-        "name": "Contra Force",
-        "file": "Contra_Force_(USA).nes"
-    },
-    {
-        "name": "Crisis Force",
-        "file": "Crisis_Force_(Japan).nes"
-    },
-    {
-        "name": "Crystalis",
-        "file": "Crystalis_(USA).nes"
-    },
-    {
         "name": "Darkwing Duck",
         "file": "Darkwing_Duck_(USA).nes"
-    },
-    {
-        "name": "Deadpool",
-        "file": "Deadpool_(Unl).nes"
     },
     {
         "name": "Die Hard",
@@ -150,10 +82,6 @@
     {
         "name": "Double Dragon",
         "file": "Double_Dragon_(USA).nes"
-    },
-    {
-        "name": "Double Dragon - Two Player Mod",
-        "file": "Double_Dragon_-_Two_Player_Mod_(Unl).nes"
     },
     {
         "name": "Double Dragon II - The Revenge",
