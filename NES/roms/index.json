@@ -84,20 +84,12 @@
         "file": "Double_Dragon_(USA).nes"
     },
     {
-        "name": "Double Dragon II - The Revenge",
-        "file": "Double_Dragon_II_-_The_Revenge_(USA)_(Rev_1).nes"
-    },
-    {
         "name": "Double Dribble",
         "file": "Double_Dribble_(USA)_(Rev_1).nes"
     },
     {
         "name": "Dr. Mario",
         "file": "Dr._Mario_(Japan,_USA)_(En)_(Rev_1).nes"
-    },
-    {
-        "name": "Dragon Spirit - The New Legend",
-        "file": "Dragon_Spirit_-_The_New_Legend_(USA).nes"
     },
     {
         "name": "DuckTales",
@@ -120,43 +112,11 @@
         "file": "Faxanadu_(USA)_(Rev_1).nes"
     },
     {
-        "name": "Felix the Cat",
-        "file": "Felix_the_Cat_(USA).nes"
-    },
-    {
-        "name": "Fire 'n Ice",
-        "file": "Fire_'n_Ice_(USA).nes"
-    },
-    {
-        "name": "Flintstones, The - The Rescue of Dino & Hoppy",
-        "file": "Flintstones,_The_-_The_Rescue_of_Dino_&_Hoppy_(USA).nes"
-    },
-    {
-        "name": "G.I. Joe - A Real American Hero",
-        "file": "G.I._Joe_-_A_Real_American_Hero_(USA).nes"
-    },
-    {
-        "name": "Galaxy 5000 - Racing in the 51st Century",
-        "file": "Galaxy_5000_-_Racing_in_the_51st_Century_(USA).nes"
-    },
-    {
-        "name": "Gargoyle's Quest II",
-        "file": "Gargoyle's_Quest_II_(USA).nes"
-    },
-    {
         "name": "Ghosts'n Goblins",
         "file": "Ghosts'n_Goblins_(USA).nes"
     },
     {
-        "name": "Gimmick!",
-        "file": "Gimmick!_(Japan).nes"
-    },
-    {
-        "name": "Goonies",
-        "file": "Goonies_(Japan).nes"
-    },
-    {
-        "name": "Guardian Legend, The",
+        "name": "The Guardian Legend",
         "file": "Guardian_Legend,_The_(USA).nes"
     },
     {
@@ -172,20 +132,12 @@
         "file": "Gun_Nac_(USA).nes"
     },
     {
-        "name": "Hebereke",
-        "file": "Hebereke_(Japan).nes"
-    },
-    {
         "name": "Ice Climber",
         "file": "Ice_Climber_(USA,_Europe,_Korea)_(En).nes"
     },
     {
         "name": "Ice Hockey",
         "file": "Ice_Hockey_(USA).nes"
-    },
-    {
-        "name": "Ivan 'Ironman' Stewart's Super Off Road",
-        "file": "Ivan_'Ironman'_Stewart's_Super_Off_Road_(USA).nes"
     },
     {
         "name": "Jackal",
@@ -196,12 +148,8 @@
         "file": "Journey_to_Silius_(USA).nes"
     },
     {
-        "name": "Kekkyoku Nankyoku Daibouken",
+        "name": "Kekkyoku Nankyoku Daibouken (Antarctic Adventure)",
         "file": "Kekkyoku_Nankyoku_Daibouken_(Japan)_(Rev_1).nes"
-    },
-    {
-        "name": "KickMaster",
-        "file": "KickMaster_(USA).nes"
     },
     {
         "name": "Kid Icarus",
