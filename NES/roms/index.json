@@ -156,10 +156,6 @@
         "file": "Kid_Icarus_(USA,_Europe)_(Rev_1).nes"
     },
     {
-        "name": "Kirby's Adventure",
-        "file": "Kirby's_Adventure_(USA)_(Rev_1).nes"
-    },
-    {
         "name": "Kung Fu",
         "file": "Kung_Fu_(Japan,_USA)_(En).nes"
     },
@@ -172,16 +168,8 @@
         "file": "Life_Force_(USA)_(Rev_1).nes"
     },
     {
-        "name": "Little Mermaid, The",
-        "file": "Little_Mermaid,_The_(USA).nes"
-    },
-    {
         "name": "Little Nemo - The Dream Master",
         "file": "Little_Nemo_-_The_Dream_Master_(USA).nes"
-    },
-    {
-        "name": "Little Samson",
-        "file": "Little_Samson_(USA).nes"
     },
     {
         "name": "Lode Runner",
@@ -192,7 +180,7 @@
         "file": "Mad_City_(Japan).nes"
     },
     {
-        "name": "Magic of Scheherazade, The",
+        "name": "The Magic of Scheherazade",
         "file": "Magic_of_Scheherazade,_The_(USA).nes"
     },
     {
@@ -202,10 +190,6 @@
     {
         "name": "Mappy",
         "file": "Mappy_(Japan).nes"
-    },
-    {
-        "name": "Marble Madness",
-        "file": "Marble_Madness_(USA).nes"
     },
     {
         "name": "Mario Bros.",
@@ -220,84 +204,24 @@
         "file": "Mega_Man_2_(USA).nes"
     },
     {
-        "name": "Mega Man 3",
-        "file": "Mega_Man_3_(USA).nes"
-    },
-    {
-        "name": "Mega Man 4",
-        "file": "Mega_Man_4_(USA)_(Rev_1).nes"
-    },
-    {
-        "name": "Mega Man 5",
-        "file": "Mega_Man_5_(USA).nes"
-    },
-    {
-        "name": "Mega Man 6",
-        "file": "Mega_Man_6_(USA).nes"
-    },
-    {
         "name": "Metal Gear",
         "file": "Metal_Gear_(USA).nes"
-    },
-    {
-        "name": "Metal Storm",
-        "file": "Metal_Storm_(USA).nes"
     },
     {
         "name": "Metroid",
         "file": "Metroid_(USA).nes"
     },
     {
-        "name": "Mickey Mousecapade",
-        "file": "Mickey_Mousecapade_(USA).nes"
-    },
-    {
-        "name": "Micro Machines",
-        "file": "Micro_Machines_(USA)_(Unl).nes"
-    },
-    {
-        "name": "Mighty Final Fight",
-        "file": "Mighty_Final_Fight_(USA).nes"
-    },
-    {
-        "name": "Mike Tyson's Punch-Out!!",
-        "file": "Mike_Tyson's_Punch-Out!!_(Japan,_USA)_(En)_(Rev_1).nes"
-    },
-    {
-        "name": "Moai-kun",
-        "file": "Moai-kun_(Japan).nes"
-    },
-    {
         "name": "Ms. Pac-Man",
         "file": "Ms._Pac-Man_(USA)_(Tengen)_(Unl).nes"
-    },
-    {
-        "name": "North and South",
-        "file": "North_and_South_(USA).nes"
     },
     {
         "name": "Nuts & Milk",
         "file": "Nuts_&_Milk_(Japan).nes"
     },
     {
-        "name": "Over Horizon",
-        "file": "Over_Horizon_(Japan).nes"
-    },
-    {
-        "name": "Paperboy",
-        "file": "Paperboy_(USA).nes"
-    },
-    {
-        "name": "Pirates!",
-        "file": "Pirates!_(USA).nes"
-    },
-    {
         "name": "Popeye",
         "file": "Popeye_(World)_(Rev_1).nes"
-    },
-    {
-        "name": "Power Blade",
-        "file": "Power_Blade_(USA).nes"
     },
     {
         "name": "Prince of Persia",
@@ -320,18 +244,6 @@
         "file": "Rad_Racer_(USA).nes"
     },
     {
-        "name": "Radia Senki - Reimei Hen",
-        "file": "Radia_Senki_-_Reimei_Hen_(Japan).nes"
-    },
-    {
-        "name": "Rampage",
-        "file": "Rampage_(USA).nes"
-    },
-    {
-        "name": "Rampart",
-        "file": "Rampart_(USA)_(Jaleco).nes"
-    },
-    {
         "name": "Rescue - The Embassy Mission",
         "file": "Rescue_-_The_Embassy_Mission_(USA).nes"
     },
@@ -342,10 +254,6 @@
     {
         "name": "Robin Hood - Prince of Thieves",
         "file": "Robin_Hood_-_Prince_of_Thieves_(USA)_(Rev_1).nes"
-    },
-    {
-        "name": "Rollergames",
-        "file": "Rollergames_(USA).nes"
     },
     {
         "name": "Rush'n Attack",
@@ -360,24 +268,8 @@
         "file": "S.C.A.T._-_Special_Cybernetic_Attack_Team_(USA).nes"
     },
     {
-        "name": "Shadow of the Ninja",
-        "file": "Shadow_of_the_Ninja_(USA).nes"
-    },
-    {
-        "name": "Shadowgate",
-        "file": "Shadowgate_(USA).nes"
-    },
-    {
-        "name": "Shatterhand",
-        "file": "Shatterhand_(USA).nes"
-    },
-    {
         "name": "Ski or Die",
         "file": "Ski_or_Die_(USA).nes"
-    },
-    {
-        "name": "Smash T.V.",
-        "file": "Smash_T.V._(USA).nes"
     },
     {
         "name": "Snake Rattle n Roll",
@@ -392,76 +284,16 @@
         "file": "Softball_Tengoku_(Japan).nes"
     },
     {
-        "name": "Sonic the Hedgehog",
-        "file": "Sonic_the_Hedgehog_(Unl).nes"
-    },
-    {
         "name": "Spelunker",
         "file": "Spelunker_(USA).nes"
-    },
-    {
-        "name": "StarTropics",
-        "file": "StarTropics_(USA).nes"
-    },
-    {
-        "name": "Street Fighter 2010 - The Final Fight",
-        "file": "Street_Fighter_2010_-_The_Final_Fight_(USA).nes"
-    },
-    {
-        "name": "Street Fighter II",
-        "file": "Street_Fighter_II_(Unl).nes"
     },
     {
         "name": "Strider",
         "file": "Strider_(USA).nes"
     },
     {
-        "name": "Super Contra",
-        "file": "Super_Contra_(Japan).nes"
-    },
-    {
         "name": "Super Mario Bros.",
         "file": "Super_Mario_Bros._(World).nes"
-    },
-    {
-        "name": "Super Mario Bros. - Two Player Mod",
-        "file": "Super_Mario_Bros._-_Two_Player_Mod_(Unl).nes"
-    },
-    {
-        "name": "Super Mario Bros. 2",
-        "file": "Super_Mario_Bros._2_(USA)_(Rev_1).nes"
-    },
-    {
-        "name": "Super Mario Bros. 3",
-        "file": "Super_Mario_Bros._3_(USA)_(Rev_1).nes"
-    },
-    {
-        "name": "Super Pitfall",
-        "file": "Super_Pitfall_(USA).nes"
-    },
-    {
-        "name": "Super Spike V'Ball",
-        "file": "Super_Spike_V'Ball_(USA).nes"
-    },
-    {
-        "name": "Tecmo Super Bowl",
-        "file": "Tecmo_Super_Bowl_(USA).nes"
-    },
-    {
-        "name": "Tecmo World Wrestling",
-        "file": "Tecmo_World_Wrestling_(USA).nes"
-    },
-    {
-        "name": "Teenage Mutant Ninja Turtles - Tournament Fighters",
-        "file": "Teenage_Mutant_Ninja_Turtles_-_Tournament_Fighters_(USA).nes"
-    },
-    {
-        "name": "Teenage Mutant Ninja Turtles II - The Arcade Game",
-        "file": "Teenage_Mutant_Ninja_Turtles_II_-_The_Arcade_Game_(USA).nes"
-    },
-    {
-        "name": "Teenage Mutant Ninja Turtles III - The Manhattan Project",
-        "file": "Teenage_Mutant_Ninja_Turtles_III_-_The_Manhattan_Project_(USA).nes"
     },
     {
         "name": "Tennis",
@@ -472,16 +304,8 @@
         "file": "Tetris_(USA).nes"
     },
     {
-        "name": "Tetris - Two Player Mod",
-        "file": "Tetris_-_Two_Player_Mod_(Unl).nes"
-    },
-    {
         "name": "The Adventures of Rad Gravity",
         "file": "The_Adventures_of_Rad_Gravity_(USA).nes"
-    },
-    {
-        "name": "The Legend of Kage",
-        "file": "The_Legend_of_Kage(USA).nes"
     },
     {
         "name": "The Legend of Zelda",
@@ -492,24 +316,8 @@
         "file": "The_Legend_of_Zelda_-_Ancient_Dungeon_(Unl).nes"
     },
     {
-        "name": "Tiny Toon Adventures",
-        "file": "Tiny_Toon_Adventures_(USA).nes"
-    },
-    {
-        "name": "Track & Field",
-        "file": "Track_&_Field_(USA).nes"
-    },
-    {
         "name": "Urban Champion",
         "file": "Urban_Champion_(World).nes"
-    },
-    {
-        "name": "Vice - Project Doom",
-        "file": "Vice_-_Project_Doom_(USA).nes"
-    },
-    {
-        "name": "Wizards & Warriors",
-        "file": "Wizards_&_Warriors_(USA)_(Rev_1).nes" 
     },
     {
         "name": "Wrecking Crew",
@@ -522,9 +330,5 @@
     {
         "name": "Zelda II - The Adventure of Link",
         "file": "Zelda_II_-_The_Adventure_of_Link_(USA).nes"
-    },
-    {
-        "name": "Zen - Intergalactic Ninja",
-        "file": "Zen_-_Intergalactic_Ninja_(USA).nes"
     }
 ]
