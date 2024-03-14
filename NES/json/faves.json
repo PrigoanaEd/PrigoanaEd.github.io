@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Lawn Mower",
+        "file": "lawn_mower.nes"
+    },
+    {
+        "name": "Tetris",
+        "file": "Tetris_(USA).nes"
+    },
+    {
+        "name": "Dr. Mario",
+        "file": "Dr._Mario_(Japan,_USA)_(En)_(Rev_1).nes"
+    },
+    {
+        "name": "Metroid",
+        "file": "Metroid_(USA).nes"
+    },
+    {
+        "name": "Clash at Demonhead",
+        "file": "Clash_at_Demonhead_(USA).nes"
+    },
+    {
+        "name": "Donkey Kong",
+        "file": "Donkey_Kong_(World)_(Rev_1).nes"
+    },
+    {
+        "name": "Gun.Smoke",
+        "file": "Gun.Smoke_(USA).nes"
+    },
+    {
+        "name": "Ice Climber",
+        "file": "Ice_Climber_(USA,_Europe,_Korea)_(En).nes"
+    },
+    {
+        "name": "Binary Land",
+        "file": "Binary_Land_(Japan).nes"
+    },
+    {
+        "name": "Double Dragon",
+        "file": "Double_Dragon_(USA).nes"
+    },
+    {
+        "name": "Tennis",
+        "file": "Tennis_(Japan,_USA)_(En).nes"
+    },
+    {
+        "name": "Metal Gear",
+        "file": "Metal_Gear_(USA).nes"
+    }
+]
