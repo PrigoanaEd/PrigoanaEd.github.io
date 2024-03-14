@@ -1,0 +1,334 @@
+[
+    {
+        "name": "Lawn Mower",
+        "file": "lawn_mower.nes"
+    },
+    {
+        "name": "Adventures of Lolo",
+        "file": "Adventures_of_Lolo_(USA).nes"
+    },
+    {
+        "name": "Balloon Fight",
+        "file": "Balloon_Fight_(USA).nes"
+    },
+    {
+        "name": "Battle City",
+        "file": "BattleCity_(Japan).nes"
+    },
+    {
+        "name": "The Battle of Olympus",
+        "file": "Battle_of_Olympus,_The_(USA).nes"
+    },
+    {
+        "name": "Binary Land",
+        "file": "Binary_Land_(Japan).nes"
+    },
+    {
+        "name": "Bionic Commando",
+        "file": "Bionic_Commando_(USA).nes"
+    },
+    {
+        "name": "Blades of Steel",
+        "file": "Blades_of_Steel_(USA).nes"
+    },
+    {
+        "name": "Bubble Bobble",
+        "file": "Bubble_Bobble_(USA).nes"
+    },
+    {
+        "name": "BurgerTime",
+        "file": "BurgerTime_(USA).nes"
+    },
+    {
+        "name": "Chip 'n Dale - Rescue Rangers",
+        "file": "Chip_'n_Dale_-_Rescue_Rangers_(USA).nes"
+    },
+    {
+        "name": "Chou-Wakusei Senki - MetaFight",
+        "file": "Chou-Wakusei_Senki_-_MetaFight_(Japan).nes"
+    },
+    {
+        "name": "Circus Charlie",
+        "file": "Circus_Charlie_(Japan).nes"
+    },
+    {
+        "name": "Clash at Demonhead",
+        "file": "Clash_at_Demonhead_(USA).nes"
+    },
+    {
+        "name": "Commando",
+        "file": "Commando_(USA).nes"
+    },
+    {
+        "name": "Darkwing Duck",
+        "file": "Darkwing_Duck_(USA).nes"
+    },
+    {
+        "name": "Die Hard",
+        "file": "Die_Hard_(USA).nes"
+    },
+    {
+        "name": "Dig Dug",
+        "file": "Dig_Dug_(Japan).nes"
+    },
+    {
+        "name": "Donkey Kong",
+        "file": "Donkey_Kong_(World)_(Rev_1).nes"
+    },
+    {
+        "name": "Donkey Kong Jr.",
+        "file": "Donkey_Kong_Jr._(World)_(Rev_1).nes"
+    },
+    {
+        "name": "Double Dragon",
+        "file": "Double_Dragon_(USA).nes"
+    },
+    {
+        "name": "Double Dribble",
+        "file": "Double_Dribble_(USA)_(Rev_1).nes"
+    },
+    {
+        "name": "Dr. Mario",
+        "file": "Dr._Mario_(Japan,_USA)_(En)_(Rev_1).nes"
+    },
+    {
+        "name": "DuckTales",
+        "file": "DuckTales_(USA).nes"
+    },
+    {
+        "name": "Elevator Action",
+        "file": "Elevator_Action_(USA).nes"
+    },
+    {
+        "name": "Excitebike",
+        "file": "Excitebike_(Japan,_USA)_(En).nes"
+    },
+    {
+        "name": "F1 Race",
+        "file": "F1_Race_(Japan).nes"
+    },
+    {
+        "name": "Faxanadu",
+        "file": "Faxanadu_(USA)_(Rev_1).nes"
+    },
+    {
+        "name": "Ghosts'n Goblins",
+        "file": "Ghosts'n_Goblins_(USA).nes"
+    },
+    {
+        "name": "The Guardian Legend",
+        "file": "Guardian_Legend,_The_(USA).nes"
+    },
+    {
+        "name": "Guerrilla War",
+        "file": "Guerrilla_War_(USA).nes"
+    },
+    {
+        "name": "Gun.Smoke",
+        "file": "Gun.Smoke_(USA).nes"
+    },
+    {
+        "name": "Gun Nac",
+        "file": "Gun_Nac_(USA).nes"
+    },
+    {
+        "name": "Ice Climber",
+        "file": "Ice_Climber_(USA,_Europe,_Korea)_(En).nes"
+    },
+    {
+        "name": "Ice Hockey",
+        "file": "Ice_Hockey_(USA).nes"
+    },
+    {
+        "name": "Jackal",
+        "file": "Jackal_(USA).nes"
+    },
+    {
+        "name": "Journey to Silius",
+        "file": "Journey_to_Silius_(USA).nes"
+    },
+    {
+        "name": "Kekkyoku Nankyoku Daibouken (Antarctic Adventure)",
+        "file": "Kekkyoku_Nankyoku_Daibouken_(Japan)_(Rev_1).nes"
+    },
+    {
+        "name": "Kid Icarus",
+        "file": "Kid_Icarus_(USA,_Europe)_(Rev_1).nes"
+    },
+    {
+        "name": "Kung Fu",
+        "file": "Kung_Fu_(Japan,_USA)_(En).nes"
+    },
+    {
+        "name": "Lemmings",
+        "file": "Lemmings_(USA).nes"
+    },
+    {
+        "name": "Life Force",
+        "file": "Life_Force_(USA)_(Rev_1).nes"
+    },
+    {
+        "name": "Little Nemo - The Dream Master",
+        "file": "Little_Nemo_-_The_Dream_Master_(USA).nes"
+    },
+    {
+        "name": "Lode Runner",
+        "file": "Lode_Runner_(USA).nes"
+    },
+    {
+        "name": "Mad City",
+        "file": "Mad_City_(Japan).nes"
+    },
+    {
+        "name": "The Magic of Scheherazade",
+        "file": "Magic_of_Scheherazade,_The_(USA).nes"
+    },
+    {
+        "name": "Maniac Mansion",
+        "file": "Maniac_Mansion_(USA).nes"
+    },
+    {
+        "name": "Mappy",
+        "file": "Mappy_(Japan).nes"
+    },
+    {
+        "name": "Mario Bros.",
+        "file": "Mario_Bros._(World).nes"
+    },
+    {
+        "name": "Mega Man",
+        "file": "Mega_Man_(USA).nes"
+    },
+    {
+        "name": "Mega Man 2",
+        "file": "Mega_Man_2_(USA).nes"
+    },
+    {
+        "name": "Metal Gear",
+        "file": "Metal_Gear_(USA).nes"
+    },
+    {
+        "name": "Metroid",
+        "file": "Metroid_(USA).nes"
+    },
+    {
+        "name": "Ms. Pac-Man",
+        "file": "Ms._Pac-Man_(USA)_(Tengen)_(Unl).nes"
+    },
+    {
+        "name": "Nuts & Milk",
+        "file": "Nuts_&_Milk_(Japan).nes"
+    },
+    {
+        "name": "Popeye",
+        "file": "Popeye_(World)_(Rev_1).nes"
+    },
+    {
+        "name": "Prince of Persia",
+        "file": "Prince_of_Persia_(USA).nes"
+    },
+    {
+        "name": "Princess Tomato in the Salad Kingdom",
+        "file": "Princess_Tomato_in_the_Salad_Kingdom_(USA).nes"
+    },
+    {
+        "name": "Pro Wrestling",
+        "file": "Pro_Wrestling_(USA)_(Rev_1).nes"
+    },
+    {
+        "name": "R.C. Pro-Am",
+        "file": "R.C._Pro-Am_(USA)_(Rev_1).nes"
+    },
+    {
+        "name": "Rad Racer",
+        "file": "Rad_Racer_(USA).nes"
+    },
+    {
+        "name": "Rescue - The Embassy Mission",
+        "file": "Rescue_-_The_Embassy_Mission_(USA).nes"
+    },
+    {
+        "name": "Road Fighter",
+        "file": "Road_Fighter_(Japan).nes"
+    },
+    {
+        "name": "Robin Hood - Prince of Thieves",
+        "file": "Robin_Hood_-_Prince_of_Thieves_(USA)_(Rev_1).nes"
+    },
+    {
+        "name": "Rush'n Attack",
+        "file": "Rush'n_Attack_(USA).nes"
+    },
+    {
+        "name": "Rygar",
+        "file": "Rygar_(USA)_(Rev_1).nes"
+    },
+    {
+        "name": "S.C.A.T. - Special Cybernetic Attack Team",
+        "file": "S.C.A.T._-_Special_Cybernetic_Attack_Team_(USA).nes"
+    },
+    {
+        "name": "Ski or Die",
+        "file": "Ski_or_Die_(USA).nes"
+    },
+    {
+        "name": "Snake Rattle n Roll",
+        "file": "Snake_Rattle_n_Roll_(USA).nes"
+    },
+    {
+        "name": "Soccer",
+        "file": "Soccer_(Japan,_USA)_(En).nes"
+    },
+    {
+        "name": "Softball Tengoku",
+        "file": "Softball_Tengoku_(Japan).nes"
+    },
+    {
+        "name": "Spelunker",
+        "file": "Spelunker_(USA).nes"
+    },
+    {
+        "name": "Strider",
+        "file": "Strider_(USA).nes"
+    },
+    {
+        "name": "Super Mario Bros.",
+        "file": "Super_Mario_Bros._(World).nes"
+    },
+    {
+        "name": "Tennis",
+        "file": "Tennis_(Japan,_USA)_(En).nes"
+    },
+    {
+        "name": "Tetris",
+        "file": "Tetris_(USA).nes"
+    },
+    {
+        "name": "The Adventures of Rad Gravity",
+        "file": "The_Adventures_of_Rad_Gravity_(USA).nes"
+    },
+    {
+        "name": "The Legend of Zelda",
+        "file": "The_Legend_of_Zelda_(USA)_(Rev_1).nes"
+    },
+    {
+        "name": "The Legend of Zelda - Ancient Dungeon",
+        "file": "The_Legend_of_Zelda_-_Ancient_Dungeon_(Unl).nes"
+    },
+    {
+        "name": "Urban Champion",
+        "file": "Urban_Champion_(World).nes"
+    },
+    {
+        "name": "Wrecking Crew",
+        "file": "Wrecking_Crew_(World).nes"
+    },
+    {
+        "name": "Yie Ar Kung-Fu",
+        "file": "Yie_Ar_Kung-Fu_(Japan)_(Rev_1.4).nes"
+    },
+    {
+        "name": "Zelda II - The Adventure of Link",
+        "file": "Zelda_II_-_The_Adventure_of_Link_(USA).nes"
+    }
+]
