@@ -570,7 +570,7 @@ Module.STDWEB_PRIVATE.acquire_tmp = function( dummy ) {
                 $1 = Module.STDWEB_PRIVATE.to_js($1);$2 = Module.STDWEB_PRIVATE.to_js($2);Module.STDWEB_PRIVATE.from_js($0, (function(){var h = ($1); var framebuffer = ($2); if (h.gl){var data = new Uint8Array (framebuffer.buffer , framebuffer.byteOffset , framebuffer.byteLength); h.gl.texSubImage2D (h.gl.TEXTURE_2D , 0 , 0 , 0 , 256 , 240 , h.gl.RGBA , h.gl.UNSIGNED_BYTE , data); h.gl.drawElements (h.gl.TRIANGLES , 6 , h.gl.UNSIGNED_SHORT , 0);}else {h.buffer.set (framebuffer); h.ctx.putImageData (h.img , 0 , 0);}})());
             },
             "__extjs_6dee770b9e5409ec762e74ce055417295f070f05": function($0, $1) {
-                $1 = Module.STDWEB_PRIVATE.to_js($1);Module.STDWEB_PRIVATE.from_js($0, (function(){var req = new XMLHttpRequest (); req.addEventListener ("load" , function (){var cb = ($1); cb (JSON.parse (req.responseText)); cb.drop ();}); req.open ("GET" , "roms/index.json"); req.send ();})());
+                $1 = Module.STDWEB_PRIVATE.to_js($1);Module.STDWEB_PRIVATE.from_js($0, (function(){var req = new XMLHttpRequest (); req.addEventListener ("load" , function (){var cb = ($1); cb (JSON.parse (req.responseText)); cb.drop ();}); req.open ("GET" , "json/index.json"); req.send ();})());
             },
             "__extjs_21187a8ca839538b17e1389580805db8233aca8b": function($0, $1) {
                 $1 = Module.STDWEB_PRIVATE.to_js($1);Module.STDWEB_PRIVATE.from_js($0, (function(){return ($1). files ;})());
