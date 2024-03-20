@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pac-Man ᗧ • • •</title>
+        <link id="favicon" rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+        <meta content="Pac-Man" property="og:title">
+        <meta content="Play pacman for free in the browser" property="og:description">
+        <meta content="Caltrop" property="og:site_name">
+        <meta name="theme-color" content="#FFFF00">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <canvas id="c"></canvas>
+        <script src="./classes/vec.js"></script>
+        <script src="./classes/tile.js"></script>
+        <script src="./classes/pacman.js"></script>
+        <script src="./classes/ghosts.js"></script>
+        <script src="./classes/bonus.js"></script>
+        <script src="./classes/sound.js"></script>
+        <script src="./game.js"></script>
+    </body>
+    
+    <style>
+        html {
+            background-color: black;
+            overflow-y: hidden;
+        }
+        canvas {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 100vh;
+            max-height: 100vw;
+            width:80vh;
+            max-width: 80vw;
+            -ms-interpolation-mode: nearest-neighbor;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: pixelated;
+            overflow-y: hidden
+        }
+    </style>
+</html>
