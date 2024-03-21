@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entrepreneurship Hub</title>
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="https://f-e-m-b-o-y.github.io/icon.png">
+<style>
+  body {
+    background-color: #f2f7fc; /* Light blue background */
+    margin: 0;
+    padding: 20px; /* Padding for the border around the edges of the site */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure full height of viewport */
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    position: relative; /* Needed for absolute positioning of the box */
+  }
+  
+  .container {
+    text-align: center;
+    color: #485a6c; /* Gray text color */
+    position: relative; /* Needed for z-index stacking */
+  }
+  
+  .container h1 {
+    color: #3d5c8e; /* Dark blue heading color */
+    margin: 10px 0; /* Reduced margin */
+    animation: slideInHeading 1.2s ease-out;
+  }
+  
+  .hub-logo {
+    width: 100px; /* Set the width of the image */
+    height: 100px; /* Set the height of the image */
+    border-radius: 50%; /* Make the image round */
+    border: 4px solid #3d5c8e; /* Dark blue border around the image */
+    margin-bottom: 10px; /* Reduced margin */
+    animation: slideInLogo 1s ease-out;
+  }
+  
+  .hub-btn, .classroom-btn {
+    background-color: #3d5c8e; /* Dark blue button color */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border: 2px solid #3d5c8e; /* Dark blue border around the button */
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+    margin: 10px;
+    display: inline-block;
+    animation: slideInButton 1.5s ease-out;
+  }
+  
+  .hub-btn:hover, .classroom-btn:hover {
+    background-color: #21436e; /* Darker blue hover color */
+  }
+
+  /* Styling for the floating grey box */
+  .author-box {
+    position: absolute;
+    bottom: 10px; /* Distance from the bottom */
+    left: 10px; /* Distance from the left */
+    background-color: #ccc; /* Grey background color */
+    padding: 5px 10px; /* Padding inside the box */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+  }
+
+  @keyframes slideInHeading {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInLogo {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInButton {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <img src="https://f-e-m-b-o-y.github.io/girrafe.png" alt="Hub Logo" class="hub-logo">
+  <h1>The Entrepreneurship Hub</h1>
+  <p>By Tom Maracsko</p>
+  <a href="https://prigoana.lol/EH/events/" class="hub-btn" target="_blank" rel="noopener noreferrer">Upcoming Workshops</a>
+  <a href="https://classroom.google.com/c/NjM5MzIzNzk0NDUw?cjc=cjnbl5i" class="classroom-btn" target="_blank" rel="noopener noreferrer">Google Classroom</a>
+</div>
+<!-- Author box -->
+<div class="author-box">Written by Eduard Prigoana</div>
+</body>
+</html>
