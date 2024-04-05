@@ -1,1 +1,186 @@
-<!DOCTYPE html><html lang="en"><head><link rel="icon" type="image/x-icon" href="./favicon.png"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Flappy Bird</title><style>body{margin:0;padding:0;display:flex;justify-content:center;align-items:center;min-height:100vh;background-color:#000;color:#ff6ec7;user-select:none;font-family:Courier,monospace}#game-container{text-align:center}canvas{background-color:#ff6ec7;border-radius:10px;width:90%;max-width:500px}button{background-color:#ff6ec7;color:#000;border:none;padding:10px 20px;font-size:3vw;cursor:pointer;margin-top:20px;border-radius:10px;font-family:Courier,monospace}.control-text{margin:0;color:#ff6ec7;font-family:Courier,monospace}.game-over-screen{display:none;position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.5);justify-content:center;align-items:center;flex-direction:column;z-index:1}.game-over-text{font-size:4vw;font-weight:700;color:#ff6ec7;margin-bottom:0;font-family:Courier,monospace}</style></head><body><div id="game-container"><canvas></canvas><p id="highScore" class="control-text"></p><p class="control-text">Use the spacebar or click anywhere to go up,<br>and the R key to restart the game.</p></div><div class="game-over-screen"><div class="game-over-text">Game Over!</div><button onclick="restartGame()">Retry?</button></div><audio id="sound" src="./sound.mp3"></audio><script>var myGamePiece,myScore,topWall,bottomWall,myObstacles=[],highScore=getHighScore(),paused=!1;function startGame(){(myGamePiece=new component(30,30,"black",10,120)).gravity=.05,myScore=new component("30px","courier","white",280,40,"text"),myGameArea.start(),topWall=new component(myGameArea.canvas.width,1,"black",0,0),bottomWall=new component(myGameArea.canvas.width,1,"black",0,myGameArea.canvas.height-1)}var myGameArea={canvas:document.querySelector("canvas"),start:function(){this.canvas.width=500,this.canvas.height=300,this.context=this.canvas.getContext("2d"),this.frameNo=0,this.interval=setInterval(updateGameArea,20),this.canvas.addEventListener("mousedown",accelerateOnTouch),this.canvas.addEventListener("mouseup",decelerateOnTouch),this.canvas.addEventListener("touchstart",accelerateOnTouch),this.canvas.addEventListener("touchend",decelerateOnTouch),window.addEventListener("keydown",function(e){32===e.keyCode?accelerate(-.2):80===e.keyCode&&togglePause()}),window.addEventListener("keyup",function(e){32===e.keyCode&&accelerate(.05)})},clear:function(){this.context.clearRect(0,0,this.canvas.width,this.canvas.height)}};function component(e,t,a,i,n,c){this.type=c,this.score=0,this.width=e,this.height=t,this.speedX=0,this.speedY=0,this.x=i,this.y=n,this.gravity=0,this.gravitySpeed=0,this.update=function(){ctx=myGameArea.context,"text"==this.type?(ctx.font=this.width+" "+this.height,ctx.fillStyle=a,ctx.fillText(this.text,this.x,this.y)):(ctx.fillStyle=a,ctx.fillRect(this.x,this.y,this.width,this.height))},this.newPos=function(){this.gravitySpeed+=this.gravity,this.x+=this.speedX,this.y+=this.speedY+this.gravitySpeed,this.hitBoundary()},this.hitBoundary=function(){this.y<=0&&(this.y=0,this.gravitySpeed=0),this.y+this.height>=myGameArea.canvas.height&&(this.y=myGameArea.canvas.height-this.height,this.gravitySpeed=0)},this.crashWith=function(e){var t=this.x,a=this.x+this.width,i=this.y,n=this.y+this.height,c=e.x,r=e.x+e.width,h=e.y,s=e.y+e.height,o=!0;return(n<h||s<i||a<c||r<t)&&(o=!1),o}}function updateGameArea(){if(!paused){var e,t,a,n;for(i=0;i<myObstacles.length;i+=1)if(myGamePiece.crashWith(myObstacles[i]))return myGameArea.frameNo>highScore&&(saveHighScore(highScore=myGameArea.frameNo),updateHighScoreUI()),void gameOver();for(myGameArea.clear(),myGameArea.frameNo+=1,(1==myGameArea.frameNo||everyinterval(150))&&(e=myGameArea.canvas.width,20,n=myGameArea.canvas.height-100,t=Math.floor(Math.random()*(n-20+1)+20),100,150,a=Math.floor(51*Math.random()+100),myObstacles.push(new component(10,t,"black",e,0)),myObstacles.push(new component(10,e-t-a,"black",e,t+a))),i=0;i<myObstacles.length;i+=1)myObstacles[i].x+=-1,myObstacles[i].update();if(myScore.text="Score:"+myGameArea.frameNo,myScore.update(),myGamePiece.newPos(),myGamePiece.update(),topWall.update(),bottomWall.update(),myGameArea.frameNo%1e3==0)document.getElementById("sound").play()}}function everyinterval(e){return myGameArea.frameNo/e%1==0}function accelerate(e){myGamePiece.gravity=e}function getHighScore(){return localStorage.getItem("highScore")||0}function saveHighScore(e){localStorage.setItem("highScore",e)}function updateHighScoreUI(){document.getElementById("highScore").innerText="High Score: "+highScore}function restartGame(){location.reload()}function gameOver(){clearInterval(myGameArea.interval),document.querySelector(".game-over-screen").style.display="flex"}function accelerateOnTouch(e){e.preventDefault(),paused||accelerate(-.2)}function decelerateOnTouch(e){e.preventDefault(),paused||accelerate(.05)}function togglePause(){(paused=!paused)?clearInterval(myGameArea.interval):myGameArea.interval=setInterval(updateGameArea,20)}document.addEventListener("DOMContentLoaded",function(){updateHighScoreUI()}),startGame()</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Flappy Bird</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #000;
+            color: #ff6ec7;
+            user-select: none;
+            font-family: Courier, monospace;
+        }
+
+        #game-container {
+            text-align: center;
+        }
+
+        canvas {
+            background-color: #ff6ec7;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        button {
+            background-color: #ff6ec7;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            font-size: 3vw;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 10px;
+            font-family: Courier, monospace;
+        }
+
+        .control-text {
+            margin: 0;
+            color: #ff6ec7;
+            font-family: Courier, monospace;
+        }
+
+        .game-over-screen {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .5);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 1;
+        }
+
+        .game-over-text {
+            font-size: 4vw;
+            font-weight: 700;
+            color: #ff6ec7;
+            margin-bottom: 0;
+            font-family: Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+<div id="game-container">
+    <canvas></canvas>
+    <p id="highScore" class="control-text"></p>
+    <p class="control-text">Use the spacebar or click anywhere to go up,<br>and the R key to restart the game.</p>
+</div>
+<div class="game-over-screen">
+    <div class="game-over-text">Game Over!</div>
+    <button onclick="restartGame()">Retry?</button>
+</div>
+<audio id="sound" src="./sound.mp3"></audio>
+<audio id="gameOverSound" src="./sound2.mp3"></audio>
+<script>
+    var myGamePiece, myScore, topWall, bottomWall, myObstacles = [],
+        highScore = getHighScore(),
+        paused = !1;
+
+    function startGame() {
+        (myGamePiece = new component(30, 30, "black", 10, 120)).gravity = .05, myScore = new component("30px", "courier", "white", 280, 40, "text"), myGameArea.start(), topWall = new component(myGameArea.canvas.width, 1, "black", 0, 0), bottomWall = new component(myGameArea.canvas.width, 1, "black", 0, myGameArea.canvas.height - 1)
+    }
+
+    var myGameArea = {
+        canvas: document.querySelector("canvas"),
+        start: function () {
+            this.canvas.width = 500, this.canvas.height = 300, this.context = this.canvas.getContext("2d"), this.frameNo = 0, this.interval = setInterval(updateGameArea, 20), this.canvas.addEventListener("mousedown", accelerateOnTouch), this.canvas.addEventListener("mouseup", decelerateOnTouch), this.canvas.addEventListener("touchstart", accelerateOnTouch), this.canvas.addEventListener("touchend", decelerateOnTouch), window.addEventListener("keydown", function (e) {
+                32 === e.keyCode ? accelerate(-.2) : 80 === e.keyCode && togglePause()
+            }), window.addEventListener("keyup", function (e) {
+                32 === e.keyCode && accelerate(.05)
+            })
+        },
+        clear: function () {
+            this.context.clearRect(0, 0, this.canvas.width, this.canvas.height)
+        }
+    };
+
+    function component(e, t, a, i, n, c) {
+        this.type = c, this.score = 0, this.width = e, this.height = t, this.speedX = 0, this.speedY = 0, this.x = i, this.y = n, this.gravity = 0, this.gravitySpeed = 0, this.update = function () {
+            ctx = myGameArea.context, "text" == this.type ? (ctx.font = this.width + " " + this.height, ctx.fillStyle = a, ctx.fillText(this.text, this.x, this.y)) : (ctx.fillStyle = a, ctx.fillRect(this.x, this.y, this.width, this.height))
+        }, this.newPos = function () {
+            this.gravitySpeed += this.gravity, this.x += this.speedX, this.y += this.speedY + this.gravitySpeed, this.hitBoundary()
+        }, this.hitBoundary = function () {
+            this.y <= 0 && (this.y = 0, this.gravitySpeed = 0), this.y + this.height >= myGameArea.canvas.height && (this.y = myGameArea.canvas.height - this.height, this.gravitySpeed = 0)
+        }, this.crashWith = function (e) {
+            var t = this.x,
+                a = this.x + this.width,
+                i = this.y,
+                n = this.y + this.height,
+                c = e.x,
+                r = e.x + e.width,
+                h = e.y,
+                s = e.y + e.height,
+                o = !0;
+            return (n < h || s < i || a < c || r < t) && (o = !1), o
+        }
+    }
+
+    function updateGameArea() {
+        if (!paused) {
+            var e, t, a, n;
+            for (i = 0; i < myObstacles.length; i += 1)
+                if (myGamePiece.crashWith(myObstacles[i])) return myGameArea.frameNo > highScore && (saveHighScore(highScore = myGameArea.frameNo), updateHighScoreUI()), void gameOver();
+            for (myGameArea.clear(), myGameArea.frameNo += 1, (1 == myGameArea.frameNo || everyinterval(150)) && (e = myGameArea.canvas.width, 20, n = myGameArea.canvas.height - 100, t = Math.floor(Math.random() * (n - 20 + 1) + 20), 100, 150, a = Math.floor(51 * Math.random() + 100), myObstacles.push(new component(10, t, "black", e, 0)), myObstacles.push(new component(10, e - t - a, "black", e, t + a))), i = 0; i < myObstacles.length; i += 1) myObstacles[i].x += -1, myObstacles[i].update();
+            if (myScore.text = "Score:" + myGameArea.frameNo, myScore.update(), myGamePiece.newPos(), myGamePiece.update(), topWall.update(), bottomWall.update(), myGameArea.frameNo % 1e3 == 0) document.getElementById("sound").play()
+        }
+    }
+
+    function everyinterval(e) {
+        return myGameArea.frameNo / e % 1 == 0
+    }
+
+    function accelerate(e) {
+        myGamePiece.gravity = e
+    }
+
+    function getHighScore() {
+        return localStorage.getItem("highScore") || 0
+    }
+
+    function saveHighScore(e) {
+        localStorage.setItem("highScore", e)
+    }
+
+    function updateHighScoreUI() {
+        document.getElementById("highScore").innerText = "High Score: " + highScore
+    }
+
+    function restartGame() {
+        location.reload()
+    }
+
+    function gameOver() {
+        clearInterval(myGameArea.interval), document.querySelector(".game-over-screen").style.display = "flex";
+        document.getElementById("gameOverSound").play();
+    }
+
+    function accelerateOnTouch(e) {
+        e.preventDefault(), paused || accelerate(-.2)
+    }
+
+    function decelerateOnTouch(e) {
+        e.preventDefault(), paused || accelerate(.05)
+    }
+
+    function togglePause() {
+        (paused = !paused) ? clearInterval(myGameArea.interval): myGameArea.interval = setInterval(updateGameArea, 20)
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        updateHighScoreUI()
+    }), startGame()
+</script>
+</body>
+</html>
