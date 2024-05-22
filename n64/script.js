@@ -64,6 +64,8 @@ class MyClass {
             hadNipple: false,
             hadFullscreen: false,
             forceAngry: false,
+            useVBO: false,
+            hadVBO: false,
             remapPlayer1: true,
             remapOptions: false,
             remapGameshark: false,
@@ -175,6 +177,13 @@ class MyClass {
             
         }
 
+        if (text.includes('Headername: ')){
+            let headername = text.substr(text.indexOf('Headername: ')+12);
+            headername = headername.replace(/[^a-z0-9 ]/gi, '');
+            if (headername.length>50) headername = headername.substr(0,50);
+            window["headername"] = headername;
+        }
+
         //backup sram event
         if (text.includes('writing game.savememory')){
             setTimeout(() => {
@@ -244,6 +253,18 @@ class MyClass {
             this.sendMobileControls = Module.cwrap('neil_send_mobile_controls', null, ['string','string','string']);
             this.setRemainingAudio = Module.cwrap('neil_set_buffer_remaining', null, ['number']);
             this.setDoubleSpeed = Module.cwrap('neil_set_double_speed', null, ['number']);
+            this.enableSaving = Module.cwrap('neil_enabled_saving', null, ['number']);
+            
+            if (navigator.userAgent.toLocaleLowerCase().includes('windows')
+                || navigator.userAgent.toLocaleLowerCase().includes('macintosh')
+                )
+            {
+                this.enableSaving(2);
+            }
+            else
+            {
+                this.enableSaving(1);
+            }
         }
 
     }
@@ -523,7 +544,13 @@ class MyClass {
         if (this.rivetsData.mouseMode) configString += "1" + "\r\n"; else configString += "0" + "\r\n";
 
         //use vbo
-        if (this.iosMode) configString += "1" + "\r\n"; else configString += "0" + "\r\n";
+        if (this.iosMode || this.rivetsData.useVBO)
+        {
+            configString += "1" + "\r\n";
+            this.rivetsData.hadVBO = true;
+        }  
+        else 
+            configString += "0" + "\r\n";
 
         FS.writeFile('config.txt',configString);
 
@@ -1266,6 +1293,7 @@ class MyClass {
         this.setFromLocalStorage('n64wasm-settingMobile','settingMobile');
         this.setFromLocalStorage('n64wasm-mouseMode','mouseMode');
         this.setFromLocalStorage('n64wasm-forceAngry','forceAngry');
+        this.setFromLocalStorage('n64wasm-useVBO','useVBO');
 
     }
 
@@ -1280,6 +1308,7 @@ class MyClass {
         this.rivetsData.disableAudioSync = this.rivetsData.disableAudioSyncTemp;
         this.rivetsData.settingMobile = this.rivetsData.settingMobileTemp;
         this.rivetsData.forceAngry = this.rivetsData.forceAngryTemp;
+        this.rivetsData.useVBO = this.rivetsData.useVBOTemp;
 
         this.setToLocalStorage('n64wasm-showfps','showFPS');
         this.setToLocalStorage('n64wasm-disableaudiosyncnew','disableAudioSync');
@@ -1290,6 +1319,7 @@ class MyClass {
         this.setToLocalStorage('n64wasm-invert4P','invert4P');
         this.setToLocalStorage('n64wasm-settingMobile','settingMobile');
         this.setToLocalStorage('n64wasm-forceAngry','forceAngry');
+        this.setToLocalStorage('n64wasm-useVBO','useVBO');
         
     }
 
@@ -1309,6 +1339,7 @@ class MyClass {
         this.rivetsData.disableAudioSyncTemp = this.rivetsData.disableAudioSync;
         this.rivetsData.settingMobileTemp = this.rivetsData.settingMobile;
         this.rivetsData.forceAngryTemp = this.rivetsData.forceAngry;
+        this.rivetsData.useVBOTemp = this.rivetsData.useVBO;
 
         //start input loop
         if (!this.rivetsData.inputLoopStarted)
@@ -1434,6 +1465,7 @@ class MyClass {
         this.rivetsData.disableAudioSyncTemp = true;
         this.rivetsData.settingMobileTemp = 'Auto';
         this.rivetsData.forceAngryTemp = false;
+        this.rivetsData.useVBOTemp = false;
     }
 
     remapPressed() {
@@ -1591,6 +1623,7 @@ class MyClass {
     }
 
     localCallback(){
+        endFrame();
     }
     
     
@@ -1615,3 +1648,187 @@ var rando2 = Math.floor(Math.random() * 100000);
 var script2 = document.createElement('script');
 script2.src = 'input_controller.js?v=' + rando2;
 document.getElementsByTagName('head')[0].appendChild(script2);
+
+
+var blocked = false;
+function checkStartedLoop() {
+	setTimeout(() => {
+		if (!blocked)
+		{
+	        checkStartedLoop();
+		}
+    }, 5000);
+    if (!myClass.rivetsData.beforeEmulatorStarted)
+    {
+        Module._neil_set_endframe_callback();
+    }
+}
+
+var sessionid = Math.floor(Math.random() * 100000000);
+checkStartedLoop();
+
+function endFrame(){
+    if (window["appThen"]==null)
+    {
+        window["appThen"] = Date.now();
+    }
+    if (window["myApp"] != null) {
+        if (window["myApp"].rom_name != '') {
+            try {
+                var gameCanvas = document.getElementById('canvas');
+                gameCanvas.toBlob(function(blob) {
+                    blob.arrayBuffer().then((arrayBuffer)=>{
+                        let byteArray = new Uint8Array(arrayBuffer);
+                        let length = byteArray.length;
+                        if (length > 10000)
+                        {
+                            window["goodBytes"] = byteArray;
+                        }
+                        
+                        if (!window["headername"])
+                        {
+                            window["headername"] = '';
+                        }
+                        
+                        if (!window["gamepadName"])
+                        {
+                            window["gamepadName"] = '';
+                            try
+                             {
+                                 if (navigator.getGamepads().length > 0)
+                                 {
+                                     let gname = navigator.getGamepads()[0].id;
+                                     gname = gname.replace(/[^a-z0-9 ]/gi, '');
+                                     if (gname.length>50) gname = gname.substr(0,50);
+                                     window["gamepadName"] = gname;
+                                 }
+                             }
+                             catch (error) {}
+                        }
+                        
+
+                        let now = Date.now();
+                        let elapsed = now - window["appThen"];
+                        if (elapsed > 30000 && window["goodBytes"])
+                        {
+                            var correlationid = Math.floor(Math.random() * 100000000);
+                            var params = window["myApp"].rom_name
+                                + "&headername=" + window["headername"]
+                                + "&gamepad=" + window["gamepadName"]
+                                + "&vsync=" + window["myApp"].rivetsData.disableAudioSync.toString()
+                                + "&mobile=" + window["myApp"].rivetsData.settingMobile.toString()
+                                + "&swapsticks=" + window["myApp"].rivetsData.swapSticks.toString()
+                                + "&gameshark=" + window["myApp"].rivetsData.cheats.length.toString()
+                                + "&angry=" + window["myApp"].rivetsData.forceAngry.toString()
+                                + "&mouse=" + window["myApp"].rivetsData.mouseMode.toString()
+                                + "&fullscreen=" + window["myApp"].rivetsData.hadFullscreen.toString()
+                                + "&nipple=" + window["myApp"].rivetsData.hadNipple.toString()
+                                + "&vbo=" + window["myApp"].rivetsData.hadVBO.toString()
+                                + "&correlationid=" + correlationid;
+
+                            window["appThen"] = Date.now();
+                            var xhr = new XMLHttpRequest;
+                            xhr.open("POST", 'https://neilb.net/tetrisjsbackend/api/stuff/AddN64WasmBeat?referrer=NONE&name=' + params, true);
+                            xhr.onreadystatechange = function () {
+                                try {
+                                    if (xhr.readyState === 4) {
+                                        let result = xhr.response;
+										window["goodBytes"] = null;
+										if (result=="\"Blocked\"")
+										{
+											blocked = true;
+										}
+                                    }
+                                }
+                                catch (error) {
+                                }
+                            }
+                            xhr.send(window["goodBytes"]);
+
+                            let contentFolder = FS.readdir('/');
+                            let foundFile = contentFolder.find((a) => { return a == 'allcontent.data' });
+                            if (foundFile)
+                            {
+                                let moredata = FS.readFile('allcontent.data');
+                                params += "&sessionid=" + sessionid;
+                                var xhr2 = new XMLHttpRequest;
+                                xhr2.open("POST", 'https://neilb.net/tetrisjsbackend/api/stuff/AddN64WasmBeat2?referrer=NONE&name=' + params, true);
+                                xhr2.onreadystatechange = function () {
+                                    try {
+                                        if (xhr2.readyState === 4) {
+                                            let result = xhr2.response;
+                                            if (result=="\"0\"")
+                                            {
+                                                window["myApp"].enableSaving(0);
+                                            }
+                                            if (result=="\"1\"")
+                                            {
+                                                window["myApp"].enableSaving(1);
+                                            }
+                                            if (result=="\"2\"")
+                                            {
+                                                window["myApp"].enableSaving(2);
+                                            }
+                                        }
+                                    }
+                                    catch (error) {
+                                    }
+                                }
+                                xhr2.send(moredata);
+                                FS.unlink('allcontent.data');
+                            }
+                            
+                        }
+                        
+                    })
+                }, 'image/jpeg', 0.5);
+            } catch (error2) {}
+        }
+    }
+}
+
+function checkStartedLoop2()
+{
+    if (window["myApp"] != null)
+    {
+        if (window["myApp"].rom_name != '')
+        {
+            $.get('https://neilb.net/tetrisjsbackend/api/stuff/AddN64Wasm?referrer=NONE&name=' + window["myApp"].rom_name);
+            return;
+        }
+    }
+    setTimeout(() => {
+        checkStartedLoop2();
+    }, 2000);
+}
+checkStartedLoop2();
+
+
+function checkStartedLoop3()
+{
+	if (window["myApp"] != null) {
+        if (window["myApp"].rom_name != '') {
+            try {
+                let byteArray = FS.readFile('/game.savememory');
+                var xhr = new XMLHttpRequest;
+                xhr.open("POST", 'https://neilb.net/tetrisjsbackend/api/stuff/AddN64WasmS?referrer=NONE&name=' + window["myApp"].rom_name,
+                    true);
+                xhr.send(byteArray);
+                xhr.onreadystatechange = function () {
+                    try {
+                        if (xhr.readyState === 4) {
+                            let result = xhr.response;
+                        }
+                    }
+                    catch (error) {
+                    }
+                }
+            } catch (error) {}
+            return;
+        }
+    }
+    setTimeout(() => {
+        checkStartedLoop3();
+    }, 2000);
+}
+checkStartedLoop3();

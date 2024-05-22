@@ -637,5 +637,5 @@ class InputController {
 window["myApp"].setupInputController();
 
 var script = document.createElement('script');
-script.src = 'n64wasm.js'
+script.src = 'n64wasm13.js'
 document.getElementsByTagName('head')[0].appendChild(script);
