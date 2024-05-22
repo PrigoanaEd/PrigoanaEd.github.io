@@ -982,12 +982,13 @@
         </div>
     </div>
 
-    <script src="settings.js"></script>
-    <script src="romlist.js"></script>
+    <script src="./settings.js"></script>
+    <script src="./n64wasm.js"></script>
+    <script src="./romlist.js"></script>
     <script type="text/javascript">
         var rando = Math.floor(Math.random() * Math.floor(100000));
         var script = document.createElement('script');
-        script.src = 'script.js?v=' + rando;
+        script.src = './script.js?v=' + rando;
         document.getElementsByTagName('head')[0].appendChild(script);
     </script>
 </body>
